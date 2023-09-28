@@ -1,0 +1,20 @@
+h1{
+    font-style: italic;
+}
+
+body{
+    text-align: center;
+    background-color: burlywood;
+}
+.hide {
+    display: none;
+  }
+  
+  .myDIV{
+  font-size: xx-large;;
+  }
+      
+  .myDIV:hover + .hide {
+    display: block;
+    color: rgb(255, 0, 0);
+  }
