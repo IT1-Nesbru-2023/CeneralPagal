@@ -1,0 +1,23 @@
+body{
+text-align: center;
+}
+
+.ikkeunderstrek{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(189, 189, 189);
+}
+
+span{
+    background-color: yellow;
+    color: black;
+}
+
+h2{
+    color: rgb(104, 179, 255);
+}
+
+.kursivt{
+    font-style: italic;
+    font-weight: bold;
+}
