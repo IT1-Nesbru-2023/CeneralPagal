@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: aquamarine;
+            width: 50px;
+            height: 50px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="knapp"></div>
+    <p id="svar">Her er resultatet</p>
+    <script>
+        let knapp = document.getElementById("knapp");
+        let svar = document.getElementById("svar");
+        knapp.addEventListener("mouseout", regnUt)
+        function regnUt() {
+            svar.innerHTML = svar.innerHTML + " Talha"
+        }
+
+        function ganging(tall1, tall2) {
+            return tall1 * tall2;
+        }
+        alert(ganging(5,6))
+
+    </script>
+</body>
+
+</html>

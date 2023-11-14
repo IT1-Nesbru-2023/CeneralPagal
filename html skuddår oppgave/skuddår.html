@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if this is a leap year.</title>
+</head>
+<body>
+    <script>
+        let input = prompt("Skriv inn et årstall:");
+        let year = parseInt(input);
+ 
+        if (!isNaN(year)) {
+            let skudd_aar = false;
+ 
+            if (year % 4 === 0) {
+                if (year % 100 !== 0 || (year % 100 === 0 && year % 400 === 0)) {
+                    skudd_aar = true;
+                }
+            }
+ 
+            if (skudd_aar) {
+                alert(year + " er et skuddår.");
+            } else {
+                alert(year + " er ikke et skuddår.");
+            }
+        } else {
+            alert("Du skrev ikke inn et gyldig årstall.");
+        }
+    </script>
