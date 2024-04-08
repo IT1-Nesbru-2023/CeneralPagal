@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visittkort</title>
+    <link rel="stylesheet" href="Visittkort.css">
+</head>
+
+<body>
+
+    <!-- Visittkort-seksjon -->
+    <div class="grid-container" id="visittkort">
+        <div class="grid-item top-right">
+            <!-- Plassering for Bedriftsnavn -->
+            <p id="bedriftsnavn">Bedriftsnavn</p>
+        </div>
+
+        <div class="grid-item center" id="navn_stilling">
+            <!-- Plassering for Navn, Stilling og Fødselsdato -->
+            <h2 id="navn">Navn</h2>
+            <h4 id="stilling">Stilling</h4>
+            <p id="fodselsdato">Fødselsdato</p>
+        </div>
+
+        <div class="grid-item bottom-center">
+            <!-- Plassering for Adresse -->
+            <p id="adresse">Adresse</p>
+        </div>
+    </div>
+
+    <!-- Input-seksjon for å fylle ut informasjon -->
+    <div id="hoved">
+        <h2> Visittkort </h2>
+
+        <!-- Input-feltene -->
+         <!--Under kan man se at jeg driver ae designer med plaseringer -->
+          <!-- Plasseringer gjør jeg med grid -->
+
+        <label for="Navn">Navn</label>
+        <input type="text" id="Navn" placeholder="Ole">
+
+        <label for="Stilling">Stilling</label>
+        <select id="Stilling">
+            <option value="sjef">Sjef</option>
+            <option value="medarbeider">Medarbeider</option>
+            <option value="ekstrahjelp">Ekstrahjelp</option>
+            <option value="student">Student</option>
+        </select>
+
+        <label for="Adresset">Adresset</label>
+        <input type="text" id="Adresset" placeholder="Drømmeland 123">
+
+        <label for="Bedriftsnavn">Bedriftsnavn</label>
+        <input type="text" id="Bedriftsnavn" placeholder="Coop">
+
+        <label for="Fødselsdato">Fødselsdato</label>
+        <input type="text" id="Fødselsdato" placeholder="1997">
+
+        <label for="Mail">Mail</label>
+        <input type="email" id="Mail" placeholder="Ole@gmail.com">
+
+        <!-- Fargevelger for å velge farge på visittkortet -->
+        <label for="Color">Velg farge</label>
+        <input type="color" id="Color" value="#008cff">
+
+        <!-- Knapp for å oppdatere visittkortet -->
+        <button onclick="oppdaterVisittkort()">Lag Visittkort</button>
+    </div>
+
+    <!-- JavaScript for å oppdatere visittkortet dynamisk -->
+    <script src="Visittkort.js"> </script>
+     <!-- Kilder https://www.w3schools.com/Css/css_positioning.asp, https://developer.mozilla.org/en-US/docs/Learn/CSS, https://stackoverflow.com/questions/67584488/my-css-is-not-being-applied-to-my-html-how-do-i-fix-it -->
+
+</body>
+
+</html>

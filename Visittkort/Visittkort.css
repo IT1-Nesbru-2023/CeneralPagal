@@ -1,0 +1,74 @@
+    /* Stiler for visittkortet */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .center {
+        grid-column: span 3;
+    }
+
+    .top-right {
+        grid-column: span 1;
+        text-align: right;
+    }
+
+    .bottom-center {
+        grid-column: span 3;
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    p {
+        color: #666;
+        margin: 5px 0;
+    }
+
+    /* Stiler for input-seksjonen */
+    body {
+        background-color: #f5f5f5;
+        font-family: Georgia, serif;
+    }
+
+    #hoved {
+        width: 15%;
+        margin: 50px auto;
+        padding: 40px;
+        background-color: white;
+        border: 1px solid #cccccc;
+    }
+
+    h1,
+    h2 {
+        font-family: Arial, sans-serif;
+    }
+
+    input,
+    textarea,
+    select {
+        display: block;
+        margin-top: 2px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
